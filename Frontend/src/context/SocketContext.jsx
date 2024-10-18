@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
   const user = useRecoilValue(userAtom);
 
   useEffect(() => {
-    const socket = io("/", {
+    const socket = io("https://thread-clone-new-n4mc.onrender.com/", {
       query: {
         userId: user?._id,
       },
