@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://thread-clone-sr1c.vercel.app", // Ensure this matches the frontend URL
+    origin: "https://thread-clone-new-mxcp.onrender.com", // Ensure this matches the frontend URL
     methods: ["GET", "POST"],
   },
 });
