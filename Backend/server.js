@@ -27,7 +27,7 @@ console.log(process.env.CLOUDINARY_CLOUD_NAME);
 // Middlewares
 app.use(
   cors({
-    origin: "https://thread-clone-new-n4mc.onrender.com", 
+    origin: "https://thread-clone-sr1c.vercel.app/", 
     credentials: true, 
   })
 );
