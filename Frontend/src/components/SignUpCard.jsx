@@ -38,16 +38,13 @@ export default function SignupCard() {
     try {
       console.log(inputs);
 
-      const res = await fetch(
-        "https://thread-clone-new-mxcp.onrender.com/api/users/signup",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(inputs),
-        }
-      );
+      const res = await fetch("/api/users/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(inputs),
+      });
       const data = await res.json();
 
       if (data.error) {
