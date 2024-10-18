@@ -27,8 +27,8 @@ console.log(process.env.CLOUDINARY_CLOUD_NAME);
 // Middlewares
 app.use(
   cors({
-    origin: "https://thread-clone-new-n4mc.onrender.com/", // Replace with your frontend's URL
-    credentials: true, // If you need to allow cookies or other credentials
+    origin: "https://thread-clone-new-n4mc.onrender.com", 
+    credentials: true, 
   })
 );
 app.use(express.json({ limit: "50mb" }));
