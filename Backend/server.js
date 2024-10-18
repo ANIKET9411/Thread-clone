@@ -27,7 +27,7 @@ console.log(process.env.CLOUDINARY_CLOUD_NAME);
 // Middlewares
 app.use(
   cors({
-    origin: "http://localhost:5173", // Replace with your frontend's URL
+    origin: "https://thread-clone-new-n4mc.onrender.com/", // Replace with your frontend's URL
     credentials: true, // If you need to allow cookies or other credentials
   })
 );
