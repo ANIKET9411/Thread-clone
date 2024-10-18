@@ -47,6 +47,8 @@ const signupUser = async (req, res) => {
 			username,
 			password: hashedPassword,
 		});
+		console.log(newUser);
+		
 		await newUser.save();
 
 		if (newUser) {
